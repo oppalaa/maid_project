@@ -5,6 +5,12 @@
 {% endblock %}
 
 {% block body_block %}
+<div class="mahi">
+    <a href="{% url 'nanny' %}"><i class="btn btn-success">𝐁𝐨𝐨𝐤 𝐚 𝐍𝐚𝐧𝐧𝐲</i></a>
+    <a href="{% url 'maid' %}"><i class="btn btn-success">𝐁𝐨𝐨𝐤 𝐚 𝐌𝐚𝐢𝐝</i></a>
+    <a href="{% url 'cook' %}"><i class="btn btn-success">𝐁𝐨𝐨𝐤 𝐚 𝐜𝐨𝐨𝐤</i></a>
+            
+</div>
 <div class="king">
     <h3 style="margin-left: 15px;">𝐖𝐞 𝐀𝐫𝐞 𝐓𝐡𝐞 𝐁𝐞𝐬𝐭 𝐇𝐨𝐦𝐞</h3>
    <h3> 𝐒𝐞𝐫𝐯𝐢𝐜𝐞 𝐅𝐨𝐫 𝐌𝐚𝐤𝐢𝐧𝐠 𝐘𝐨𝐮𝐫</h3>
@@ -74,7 +80,18 @@ body
     top: 450px;
     background:linear-gradient(45deg,rgb(156, 220, 241),ghostwhite);
   }
+  .mahi
+  {
 
+    
+    justify-content: space-around;
+    margin-left: 470px;
+    position: relative;
+    top:40px;
+    font-size: 35px;
+   
+  }
+  
  </style>
    
 

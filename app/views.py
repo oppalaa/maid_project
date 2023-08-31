@@ -11,3 +11,11 @@ def home(request):
 
 def services(request):
     return render(request,'services.html')
+
+def nanny(request):
+    return render(request,'nanny.html')
+def maid(request):
+    return render(request,'maid.html')
+
+def cook(request):
+    return render(request,'cook.html')

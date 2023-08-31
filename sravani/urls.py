@@ -23,4 +23,7 @@ urlpatterns = [
     path('home/',home,name='home'),
     path('User_login/',User_login,name='User_login'),
     path('services/',services,name='services'),
+    path('nanny/',nanny,name='nanny'),
+    path('maid/',maid,name='maid'),
+    path('cook/',cook,name='cook'),
 ]
