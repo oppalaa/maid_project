@@ -1,0 +1,164 @@
+{% extends 'dummy.html' %}
+{% load static %}
+{%  block title %}
+<title>services</title>
+{% endblock %}
+<link rel="stylesheet" href="form_3.css">
+
+
+{% block body_block %}
+<body>
+    <div style="height: 600px;" class="hero"> 
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="https://player.vimeo.com/external/599318648.sd.mp4?s=76d47eef5da7a724e283af6d77c09bddc947b31c&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
+        </video>
+        </div>
+
+<h1 style="text-align: center; position: relative;bottom: 550px;">Maid Details</h1>
+    <form id="a">
+    <fieldset>
+        <table>
+        <tr>
+           <td>Society Name:</td>
+           <td><input id="b" type="text" required></td>
+          <td>Name:</td>
+          <td><input type="text"></td>
+          <td>Gender:</td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+    
+            <td>Contact Number:</td>
+            <td><input type="tel"></td>
+            <td>Available Form</td>
+            <td><input type="datetime-local"></td>
+        </tr>
+
+        <tr>
+            <td>Services:</td>
+            <td><input type="checkbox"></td>
+            <td>Sweeping:</td>
+            <td><input type="checkbox"></td>
+            <tr>
+            <td>Mopping:</td>
+            <td><input type="checkbox"></td>
+            <td>Washroom Cleaning:</td>
+            <td><input type="checkbox"></td>
+            <td>Utensils Cleaning:</td>
+            <td><input type="checkbox"></td>
+            </tr>
+        </tr>
+        <tr>
+            <td>Cost Per Day(in Rs.) </td>
+            <td><input type="number" name="na" id="na"></td>
+            <td>Cost Per Month(in Rs.) </td>
+            <td><input type="number" name="na" id="na"></td>
+        </tr>
+       <tr>
+        <td>Sunday Availability</td>
+        <td><label for="rd">Yes:</label></td>
+        <td><input type="radio" name="rd" id="rd"></td>
+        <td><label for="rd">No:</label></td>
+        <td><input type="radio" name="rd" id="rd"></td>
+       </tr>
+       <tr>
+        <td>Languages:</td>
+            <td>Telugu:</td>
+            <td><input type="radio" name="b"></td>
+            <td>Hindi</td>
+            <td><input type="radio" name="b"></td>
+            <td>English</td>
+            <td><input type="radio" name="b"></td>
+       </tr>
+        <tr>
+            <td>Kannada:</td>
+            <td><input type="radio" name="b"></td>
+            <td>Tamil:</td>
+            <td><input type="radio" name="b"></td>
+            <td>Urdu:</td>
+            <td><input type="radio" name="b"></td>
+            <td>Odia:</td>
+            <td><input type="radio" name="b"></td>
+        </tr>
+        <tr>
+            <td>Other (Please Specify):</td>
+            <td><input type="text" name="un" id="un"></td>
+            <td>Experience:</td>
+            <td><input type="text" name="un" id="un"></td>
+            <td>Additional Details:</td>
+            <td><input type="text" name="un" id="un"></td>
+        </tr>
+        <tr>
+            <td><button class="btn btn-danger" style="position: relative; left: 500px;">SUBMIT</button></td>
+            <td><button  class="btn btn-danger" style="position: relative; left: 550px;">RESET</button></td>
+        </tr>
+                </table>
+                </fieldset>
+            </form>
+
+            <style>
+                #a
+            {
+            
+                font-size: 18px;
+                color:rgb(113, 6, 245);
+                text-align: center;
+                position: relative;
+                bottom: 500px;
+                border: 2px dotted black;
+            }
+            
+            legend
+            {
+                border:2px solid wheat;
+                border-radius:20px 0px;
+                background-color: black;
+                
+            }
+            
+            td
+            {
+                position: relative;
+                left:10px; 
+                padding: 2px; 
+                
+            }
+            input
+            {
+                margin-left:30px;
+                border-radius: 50px 0px;
+            }
+            table
+            {
+                margin-top:50px;
+            }
+            input:hover
+            {
+                color: yellowgreen;
+                background:radial-gradient(circle,brown,black,red,yellow);
+            }
+            legend:hover
+            {
+                color:orange;
+            
+            }
+            .hero{
+        width: 100%;
+        height: 101vh;
+        padding: 0 5%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        overflow:hidden;
+    }
+    .back-video{
+        width: 100%;
+        height: 600vh;
+        background-size: cover;
+        position: absolute;
+        left: 0;
+        z-index: -1;
+    }
+            </style>
+</body>
+{% endblock %}
